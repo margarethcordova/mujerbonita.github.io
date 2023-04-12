@@ -208,7 +208,8 @@ nav ul li a:hover {
     left: 0;
     z-index: 100000;
 }
-.hidden{
+
+.hidden {
     overflow: hidden;
 }
 
@@ -254,6 +255,12 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.padre{
+    display: flex;
+}
+.padre>.circle-text{
+    display: flex;
+}
 .container-circle>div {
     display: block;
     width: auto;
@@ -417,7 +424,15 @@ nav ul li a:hover {
         font-size: 15px;
         line-height: 20px;
     }
+
     /* ------------ SECTION INICIO -------------- */
+    .container-inicio {
+        background: var(--color-white);
+        margin: 0 0;
+        padding: 60px;
+        /* AQUI */
+        margin-top: 40px;
+    }
 
     /* ------------ SECTION PRODUCTOS -------------- */
     .container-circle {
@@ -426,17 +441,16 @@ nav ul li a:hover {
         justify-content: center;
         align-items: center;
     }
-    
+
     .container-circle>div {
         display: block;
         width: auto;
         margin: 10px;
     }
-    
+
     .container-circle .circle-text {
-        background-color: var(--color-yellow);
         border-radius: 50%;
-        padding: 20px;
+        padding: 30px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -444,20 +458,91 @@ nav ul li a:hover {
         width: 50%;
         height: 50%;
     }
-    
+
     .circle-text>p {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 20px
     }
-    
-    .flowers {
-        width: 100px;
+
+    .circle-text>h3 {
+        font-size: 20px;
     }
-    
+
+    .flowers {
+        width: 140px;
+    }
+
     /* ------------ SECTION ALIADOS -------------- */
 
     /* ------------ SECTION FOOTER-------------- */
 
+}
+
+@media(max-width: 1028px) {
+
+    /* ------------ SECTION INICIO -------------- */
+    .container-inicio {
+        padding: 60px;
+        /* AQUI */
+    }
+
+    /* ------------ SECTION PRODUCTOS -------------- */
+
+    .container-circle>div {
+        display: block;
+        width: auto;
+        margin: 9px;
+    }
+
+    .container-circle .circle-text {
+        border-radius: 50%;
+        padding: 30px;
+    }
+
+    .circle-text>p {
+        font-size: 15px;
+        line-height: 20px
+    }
+
+    .circle-text>h3 {
+        font-size: 20px;
+    }
+
+    .flowers {
+        width: 110px;
+    }
+
+    /* ------------ SECTION ALIADOS -------------- */
+
+    /* ------------ SECTION FOOTER-------------- */
+
+}
+
+@media(max-width: 964px) {
+    /* ------------ SECTION INICIO -------------- */
+
+    .container-circle .circle-text {
+        border-radius: 40px;
+        padding: 30px;
+    }
+
+
+    .circle-text>h3 {
+        font-size: 20px;
+    }
+
+    .flowers {
+        width: 90px;
+    }
+}
+
+@media(max-width: 830px) {
+
+    /* ------------ SECTION INICIO -------------- */
+    .container-inicio {
+        padding: 50px;
+        /* AQUI */
+    }
 }
 
 @media(max-width: 768px) {
@@ -537,8 +622,26 @@ nav ul li a:hover {
     }
 
     .text {
-        line-height: 15px;
-        font-size: 12px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    /* -------------------------- */
+    .container-circle .circle-text {
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+
+    .circle-text>h3 {
+        font-size: 17px;
+    }
+    .circle-text>p{
+        font-size: 15px;
+    }
+
+    .flowers {
+        width: 90px;
     }
 
     /* ------------ SECTION PRODUCTOS -------------- */
@@ -548,14 +651,46 @@ nav ul li a:hover {
     /* ------------ SECTION FOOTER------------------ */
 
 }
-
-@media (max-width: 500px) {
+@media (max-width: 689px) {
     /* ------------ SECTION INICIO---------------- */
-    
+
+    .container-circle>div {
+        margin: 5px;
+    }
     /*---------- SECTION PRODUCTOS ---------------*/
 
     /* ------------ SECTION ALIADOS -------------- */
 
     /* ------------ SECTION FOOTER-------------- */
-    
+
+}
+@media (max-width: 500px) {
+    /* ------------ SECTION INICIO---------------- */
+    .container-circle{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .container-circle .circle-text {
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+
+    .circle-text>h3 {
+        font-size: 17px;
+    }
+    .circle-text>p{
+        font-size: 15px;
+    }
+
+    .flowers {
+        width: 90px;
+    }
+    /*---------- SECTION PRODUCTOS ---------------*/
+
+    /* ------------ SECTION ALIADOS -------------- */
+
+    /* ------------ SECTION FOOTER-------------- */
+
 }

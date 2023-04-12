@@ -46,7 +46,7 @@ header {
 }
 
 .logo {
-    padding: 0 20px;
+    padding: 0;
     box-sizing: border-box;
     float: left;
     text-align: center;
@@ -255,14 +255,17 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.padre{
+.container-circle .padre {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.padre>.circle-text {
     display: flex;
 }
-.padre>.circle-text{
-    display: flex;
-}
+
 .container-circle>div {
-    display: block;
     width: auto;
     margin: 20px;
 }
@@ -351,7 +354,7 @@ nav ul li a:hover {
     background: var(--color-ligth-purple);
     padding: 10px;
     margin-bottom: 0;
-    display:flex ;
+    display: flex;
 }
 
 .logo-mb-footer {
@@ -360,7 +363,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     margin-left: 200px;
     padding: 20px;
-    
+
 }
 
 .link-pagina {
@@ -607,7 +610,8 @@ nav ul li a:hover {
     .circle-text>h3 {
         font-size: 17px;
     }
-    .circle-text>p{
+
+    .circle-text>p {
         font-size: 15px;
     }
 
@@ -622,12 +626,21 @@ nav ul li a:hover {
     /* ------------ SECTION FOOTER------------------ */
 
 }
+
 @media (max-width: 689px) {
+
     /* ------------ SECTION INICIO---------------- */
+    .container-circle {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
 
     .container-circle>div {
         margin: 5px;
     }
+
     /*---------- SECTION PRODUCTOS ---------------*/
 
     /* ------------ SECTION ALIADOS -------------- */
@@ -635,13 +648,16 @@ nav ul li a:hover {
     /* ------------ SECTION FOOTER-------------- */
 
 }
+
 @media (max-width: 500px) {
+
     /* ------------ SECTION INICIO---------------- */
-    .container-circle{
+    .container-circle {
         display: flex;
         margin: 0;
         padding: 0;
     }
+
     .container-circle .circle-text {
         border-radius: 10px;
         padding: 15px;
@@ -651,17 +667,53 @@ nav ul li a:hover {
     .circle-text>h3 {
         font-size: 17px;
     }
-    .circle-text>p{
+
+    .circle-text>p {
         font-size: 15px;
     }
 
     .flowers {
         width: 90px;
     }
+
     /*---------- SECTION PRODUCTOS ---------------*/
 
     /* ------------ SECTION ALIADOS -------------- */
 
     /* ------------ SECTION FOOTER-------------- */
 
+}
+
+@media (max-width: 400px) {
+    
+    .logo-mb {
+        width: 60px;
+        display: flex;
+        margin-top: 10px;
+    }
+    /* ------------ SECTION INICIO---------------- */
+    .container-circle .circle-text {
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+
+    .circle-text>h3 {
+        font-size: 14px;
+    }
+
+    .circle-text>p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .flowers {
+        width: 90px;
+    }
+
+    /*---------- SECTION PRODUCTOS ---------------*/
+
+    /* ------------ SECTION ALIADOS -------------- */
+
+    /* ------------ SECTION FOOTER-------------- */
 }

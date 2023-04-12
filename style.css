@@ -344,13 +344,16 @@ nav ul li a:hover {
     background: var(--color-ligth-purple);
     padding: 10px;
     margin-bottom: 0;
-    display: block;
+    display:flex ;
 }
 
-.logo-footer {
-    width: 100px;
-    height: 100px;
-    margin-top: 230px;
+.logo-mb-footer {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    padding: 20px;
+    
 }
 
 .link-pagina {
@@ -366,41 +369,9 @@ nav ul li a:hover {
     letter-spacing: 3px;
 }
 
-.instagram {
-    text-align: right;
-    padding: 5px;
-    margin-right: 400px;
-    font-size: 30px;
-}
 
 
-.whatsapp {
-    text-align: right;
-    padding: 5px;
-    margin-right: 400px;
-    font-size: 30px;
-}
 
-.github {
-    text-align: right;
-    padding: 5px;
-    margin-right: 400px;
-    font-size: 30px;
-}
-
-.facebook {
-    text-align: right;
-    padding: 2px;
-    margin-right: 400px;
-    font-size: 30px;
-}
-
-.github {
-    text-align: right;
-    padding: 2px;
-    margin-right: 400px;
-    font-size: 30px;
-}
 
 
 

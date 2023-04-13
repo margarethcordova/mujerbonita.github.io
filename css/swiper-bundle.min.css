@@ -223,11 +223,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 }
 
 .swiper-lazy-preloader-white {
-    --swiper-preloader-color: #fff
+    --swiper-preloader-color: #fff;
 }
 
 .swiper-lazy-preloader-black {
-    --swiper-preloader-color: #000
+    --swiper-preloader-color: #000;
 }
 
 @keyframes swiper-preloader-spin {
@@ -242,7 +242,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-virtual .swiper-slide {
     -webkit-backface-visibility: hidden;
-    transform: translateZ(0)
+    transform: translateZ(0);
 }
 
 .swiper-virtual.swiper-css-mode .swiper-wrapper::after {

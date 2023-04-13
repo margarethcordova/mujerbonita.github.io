@@ -292,9 +292,6 @@ nav ul li a:hover {
 }
 
 
-
-
-
 /*----------------------SECCION PRODUCTOS-----------------*/
 
 #producto-enlace {
@@ -348,6 +345,79 @@ nav ul li a:hover {
     font-size: 25px;
     font-weight: bolder;
 
+}
+/*----------------------SECCION GALERIA-----------------*/
+.container-galeria-photo{
+    width: 100%;
+    margin: 0 0;
+    overflow: hidden;
+}
+.carrusel-list{
+    display: flex;
+    align-items: center;
+}
+.container-carrusel{
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.carrusel{
+    position: relative;
+    width: 210px;
+    padding: 0 10px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+
+}
+.carrusel h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: var(--color-white);
+    padding: 15px;
+}
+.carrusel h4 small {
+    font-size: 15px;
+    display: block;
+}
+.carrusel img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 var(--color-purple);
+}
+.carrusel-arrow{
+    border-radius: 50%;
+    background-color: var(--color-pink);
+    color: var(--color-white); 
+    position: absolute;
+    z-index: 4;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+.carrusel-arrow:focus{
+    outline: 0;
+}
+.carrusel-arrow i{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.carrusel-prev{
+    left: 70px;
+}
+.carrusel-next{
+    right: 60px;
 }
 
 /*---------------------- FOOTER -----------------*/
@@ -668,7 +738,13 @@ nav ul li a:hover {
     .enlace div>a {
         font-size: 24px;
     }
-    
+    /* ------------ SECTION GALERIA ---------------- */
+    .carrusel{
+        width: 275px;
+    }
+    .carrusel a img{
+        width: 250px;
+    }
     /* ------------ SECTION ALIADOS ---------------- */
 
     /* ------------ SECTION FOOTER------------------ */

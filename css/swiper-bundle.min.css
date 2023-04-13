@@ -270,6 +270,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 .swiper-button-next,
 .swiper-button-prev {
     background-color: transparent;
+    border: none;
     position: absolute;
     top: var(--swiper-navigation-top-offset, 50%);
     width: calc(var(--swiper-navigation-size)/ 44 * 30);

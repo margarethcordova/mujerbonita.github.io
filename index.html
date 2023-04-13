@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -15,6 +16,9 @@
 </head>
 
 <body class="hidden">
+    <a href="https://api.whatsapp.com/send?phone=936471324" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a>
     <div class="loading" id="loading">
         <div class="lds-roller">
             <div></div>
@@ -36,7 +40,7 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#producto-enlace">Productos</a></li>
-                <li><a href="#carrito">Afiliados</a></li>
+                <li><a href="#afiliados">Afiliados</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -90,8 +94,11 @@
                         <img class="flowers" src="https://i.ibb.co/NTJ4WP8/free.png">
                     </div>
                 </div>
+                <br>
                 <div class="container-galeria-photo">
-                    <h4 class="title-secondary">El maquillaje tiene como objetivo resaltar la belleza que ya existe en ti, más no la crea.</h4>
+                    <h4 class="title-secondary">El maquillaje tiene como objetivo resaltar la belleza que ya existe en
+                        ti, más no la crea.</h4>
+                    <br>
                     <div class="carrusel-list swiper" id="carrusel-list">
                         <button class="carrusel-arrow swiper-button-prev" id="button-prev" oncanplay="prev()">
                         </button>
@@ -127,6 +134,7 @@
                     </div>
                 </div>
             </div>
+            <br>
         </section>
         <section id="producto-enlace">
             <section class="productos">
@@ -143,7 +151,44 @@
             </section>
         </section>
         <section id="afiliados">
-
+            <h2 class="title-primary">Marcas afiliadas</h2>
+            <div class="container-afiliados">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="https://i.ibb.co/cXBqSfV/marca-3.png" alt="marca">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/YDWv5FS/marca-6.png" alt="marca">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/V99mFcX/marca-2.png" alt="marca">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/5cjRTzj/marca-7.jpg" alt="marca">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/WgqsLK4/marca-4.png" alt="marca">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/zFNTVzc/marca-5.jpg" alt="marca">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/FgfZwGj/marca-8.png" alt="marca">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/VBb5N0p/marca-1.png" alt="marca">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/vdFDGZ0/marca-9.png" alt="marca">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur eius sed repellat obcaecati reprehenderit quisquam quasi perspiciatis quos repellendus.</p>
+        </section>
+        <section id="contacto">
+            
         </section>
     </main>
     <!------------------ ANELHI -------------------->
@@ -169,8 +214,8 @@
     <script>
         AOS.init();
     </script>
-    <!------------------- SWIPER JS ------------------->  
-    <script src="js/swiper-bundle.min.js"></script>  
+    <!------------------- SWIPER JS ------------------->
+    <script src="js/swiper-bundle.min.js"></script>
 
     <!------------------- JAVASCRIP NUESTRO ------------------->
     <script src="js/script.js"></script>

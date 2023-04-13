@@ -10,6 +10,19 @@ $(document).ready(function () {
         $('nav').toggleClass('active')
     })
 
+    var swiper = new Swiper('.carrusel-list', {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        loop: true,
+        centerSlide: 'true',
+        fade:'true',
+        grapCursor: 'true',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
 });
 
 // //cart

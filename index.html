@@ -9,6 +9,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-------- SWIPER CSS --------->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>mujer bonita</title>
 </head>
 
@@ -89,40 +91,38 @@
                     </div>
                 </div>
                 <div class="container-galeria-photo">
-                    <h2 class="title-primary">CARRUSEL</h2>
-                    <div class="carrusel-list" id="carrusel-list">
-                        <button class="carrusel-arrow carrusel-prev" id="button-prev" oncanplay="prev()">
-                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    <h4 class="title-secondary">El maquillaje tiene como objetivo resaltar la belleza que ya existe en ti, más no la crea.</h4>
+                    <div class="carrusel-list swiper" id="carrusel-list">
+                        <button class="carrusel-arrow swiper-button-prev" id="button-prev" oncanplay="prev()">
                         </button>
-                        <div class="container-carrusel flexslider" id="track">
-                            <li class="carrusel">
+                        <div class="container-carrusel swiper-wrapper" id="track">
+                            <div class="carrusel swiper-slide">
                                 <img src="https://i.ibb.co/3r2HwpL/img-1.jpg" alt="imagen">
-                            </li>
-                            <div class="carrusel">
+                            </div>
+                            <div class="carrusel swiper-slide">
                                 <img src="https://i.ibb.co/GcqCsV9/img-2.jpg" alt="imagen">
                             </div>
-                            <div class="carrusel">
+                            <div class="carrusel swiper-slide">
                                 <img src="https://i.ibb.co/pPNwKQ2/img-3.jpg" alt="imagen">
                             </div>
-                            <div class="carrusel">
+                            <div class="carrusel swiper-slide">
                                 <img src="https://i.ibb.co/3Fvm0kX/img-4.jpg" alt="imagen">
                             </div>
-                            <div class="carrusel">
+                            <div class="carrusel swiper-slide">
                                 <img src="https://i.ibb.co/kB6dcWR/img-5.jpg" alt="imagen">
                             </div>
-                            <div class="carrusel">
+                            <div class="carrusel swiper-slide">
                                 <img src="https://i.ibb.co/NCKs2YK/img-6.jpg" alt="imagen">
                             </div>
-                            <div class="carrusel">
+                            <div class="carrusel swiper-slide">
                                 <img src="https://i.ibb.co/09YLJvt/img-7.jpg" alt="imagen">
                             </div>
-                            <div class="carrusel">
+                            <div class="carrusel swiper-slide">
                                 <img src="https://i.ibb.co/1rSgS0r/img-8.jpg" alt="imagen">
                             </div>
                         </div>
-                        <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                        <button class="carrusel-arrow swiper-button-next" id="button-next" data-button="button-next"
                             oncanplay="prev()">
-                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
@@ -169,6 +169,8 @@
     <script>
         AOS.init();
     </script>
+    <!------------------- SWIPER JS ------------------->  
+    <script src="js/swiper-bundle.min.js"></script>  
 
     <!------------------- JAVASCRIP NUESTRO ------------------->
     <script src="js/script.js"></script>

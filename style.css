@@ -346,78 +346,57 @@ nav ul li a:hover {
     font-weight: bolder;
 
 }
+
 /*----------------------SECCION GALERIA-----------------*/
-.container-galeria-photo{
+.container-galeria-photo {
     width: 100%;
     margin: 0 0;
-    overflow: hidden;
 }
-.carrusel-list{
+
+.carrusel-list {
     display: flex;
     align-items: center;
 }
-.container-carrusel{
+
+.container-carrusel {
     display: flex;
     justify-content: center;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
-.carrusel{
+
+.carrusel {
     position: relative;
     width: 210px;
-    padding: 0 10px;
     float: left;
     box-sizing: border-box;
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     object-fit: cover;
 
 }
-.carrusel h4{
-    position: absolute;
-    z-index: 1;
-    font-size: 22px;
-    line-height: 23px;
-    color: var(--color-white);
-    padding: 15px;
-}
-.carrusel h4 small {
-    font-size: 15px;
-    display: block;
-}
-.carrusel img{
+
+.carrusel img {
     object-fit: cover;
     height: 300px;
-    width: 200px;
+    width: 250px;
     border-radius: 20px;
-    box-shadow: 0 2px 5px 0 var(--color-purple);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.carrusel-arrow{
-    border-radius: 50%;
-    background-color: var(--color-pink);
-    color: var(--color-white); 
+
+.swiper-button-prev {
+    color: var(--color-pink);
+    background: none;
     position: absolute;
     z-index: 4;
-    height: 48px;
-    width: 48px;
     text-align: center;
     border: 0;
     cursor: pointer;
 }
-.carrusel-arrow:focus{
+
+.carrusel-arrow:focus {
     outline: 0;
-}
-.carrusel-arrow i{
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.carrusel-prev{
-    left: 70px;
-}
-.carrusel-next{
-    right: 60px;
 }
 
 /*---------------------- FOOTER -----------------*/
@@ -457,6 +436,9 @@ nav ul li a:hover {
 
 
 
+
+
+
 /* ------------ RESPONSIVE -------------- */
 
 @media(max-width: 1115px) {
@@ -470,7 +452,7 @@ nav ul li a:hover {
         font-size: 15px;
         line-height: 20px;
     }
-    
+
 
     /* ------------ SECTION INICIO -------------- */
     .container-inicio {
@@ -519,6 +501,18 @@ nav ul li a:hover {
         width: 140px;
     }
 
+    /*--------------------SECTION GALERY------------------*/
+    .carrusel {
+        width: 210px;
+        height: 100%;
+    }
+
+    .carrusel img {
+        height: 300px;
+        width: 200px;
+        border-radius: 20px;
+    }
+
     /* ------------ SECTION ALIADOS -------------- */
 
     /* ------------ SECTION FOOTER-------------- */
@@ -532,6 +526,7 @@ nav ul li a:hover {
         padding: 60px;
         /* AQUI */
     }
+
     .container-circle>div {
         display: block;
         width: auto;
@@ -555,6 +550,7 @@ nav ul li a:hover {
     .flowers {
         width: 110px;
     }
+
     /* ------------ SECTION PRODUCTOS -------------- */
     #producto-enlace {
         margin: 0 0;
@@ -563,7 +559,7 @@ nav ul li a:hover {
         display: flex;
         height: 100vh;
     }
-    
+
     .productos {
         background-color: var(--color-pink);
         width: 50%;
@@ -592,6 +588,7 @@ nav ul li a:hover {
     .flowers {
         width: 90px;
     }
+
     /*-------------------- SECTION PRODUCTOS ---------------------*/
     #producto-enlace {
         margin: 0 0;
@@ -600,18 +597,30 @@ nav ul li a:hover {
         display: flex;
         height: 100vh;
     }
-    
+
     .productos {
         background-color: var(--color-pink);
         width: 50%;
         padding-left: 50px;
         padding-right: 30px;
     }
+
     .productos h1 {
         color: var(--color-white);
         font-size: 45px;
     }
 
+    /*--------------GALERIA--------------*/
+    .carrusel {
+        width: 210px;
+        height: 100%;
+    }
+
+    .carrusel img {
+        height: 250px;
+        width: 170px;
+        border-radius: 20px;
+    }
 }
 
 @media(max-width: 830px) {
@@ -620,6 +629,36 @@ nav ul li a:hover {
     .container-inicio {
         padding: 50px;
         /* AQUI */
+    }
+
+    /*--------------GALERIA--------------*/
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
+    }
+
+    .carrusel img {
+        height: 250px;
+        width: 170px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+}
+
+@media(max-width:810px) {
+
+    /*--------------GALERIA--------------*/
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
+    }
+
+    .carrusel img {
+        height: 250px;
+        width: 170px;
+        border-radius: 20px;
     }
 }
 
@@ -728,27 +767,51 @@ nav ul li a:hover {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .productos h1 {
         font-size: 35px;
     }
+
     .enlace>div {
-        padding: 20px 35px;    
+        padding: 20px 35px;
     }
-    
+
     .enlace div>a {
         font-size: 24px;
     }
+
     /* ------------ SECTION GALERIA ---------------- */
-    .carrusel{
-        width: 275px;
+
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
     }
-    .carrusel a img{
-        width: 250px;
+
+    .carrusel img {
+        height: 270px;
+        width: 160px;
     }
+
     /* ------------ SECTION ALIADOS ---------------- */
 
     /* ------------ SECTION FOOTER------------------ */
 
+}
+
+@media(max-width:700px) {
+
+    /* ------------ SECTION GALERIA ---------------- */
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
+    }
+
+    .carrusel img {
+        height: 200px;
+        width: 155px;
+    }
 }
 
 @media (max-width: 689px) {
@@ -773,17 +836,60 @@ nav ul li a:hover {
         display: flex;
         height: 100vh;
     }
-    
+
     .productos {
         background-color: var(--color-pink);
         width: 50%;
         padding-left: 50px;
         padding-right: 30px;
     }
+
+    /* ------------ SECTION GALERIA ---------------- */
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
+    }
+
+    .carrusel img {
+        height: 200px;
+        width: 150px;
+    }
+
     /* ------------ SECTION ALIADOS -------------- */
 
     /* ------------ SECTION FOOTER-------------- */
 
+}
+
+@media(max-width: 663px) {
+
+    /* ------------ SECTION GALERIA ---------------- */
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
+    }
+
+    .carrusel img {
+        height: 200px;
+        width: 140px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    /* ------------ SECTION GALERIA ---------------- */
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
+    }
+
+    .carrusel img {
+        height: 200px;
+        width: 125px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -821,14 +927,27 @@ nav ul li a:hover {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .enlace>div {
-        padding: 15px 20px;    
+        padding: 15px 20px;
     }
-    
+
     .enlace div>a {
         font-size: 20px;
     }
-    
+
+    /* ------------ SECTION GALERIA ---------------- */
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
+    }
+
+    .carrusel img {
+        height: 200px;
+        width: 95px;
+    }
+
     /* ------------ SECTION ALIADOS -------------- */
 
     /* ------------ SECTION FOOTER-------------- */
@@ -836,12 +955,13 @@ nav ul li a:hover {
 }
 
 @media (max-width: 400px) {
-    
+
     .logo-mb {
         width: 60px;
         display: flex;
         margin-top: 10px;
     }
+
     /* ------------ SECTION INICIO---------------- */
     .container-circle .circle-text {
         border-radius: 10px;
@@ -871,7 +991,7 @@ nav ul li a:hover {
         flex-direction: column;
         height: 100vh;
     }
-    
+
     .productos {
         background-color: var(--color-pink);
         width: auto;
@@ -884,10 +1004,24 @@ nav ul li a:hover {
         padding-right: 20px;
         padding-bottom: 55px;
     }
+
     .enlace {
         width: 100%;
         height: 40%;
     }
+
+    /* ------------ SECTION GALERIA ---------------- */
+    .carrusel {
+        width: 100px;
+        height: 100%;
+
+    }
+
+    .carrusel img {
+        height: 150px;
+        width: 70px;
+    }
+
     /* ------------ SECTION ALIADOS -------------- */
 
     /* ------------ SECTION FOOTER-------------- */
